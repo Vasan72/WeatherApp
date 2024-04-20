@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  color: #222;
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #2980b9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app-container {
+  min-width: 400px;
+  min-height: 200px;
+  max-height: 900px;
+  background: #4ca1af; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c4e0e5,
+    #4ca1af
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c4e0e5, #4ca1af);
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+}
+.searchBar {
+  border: 1px solid #ffffff;
+  height: 50px;
+  width: 80%;
+  display: flex;
+  padding: 7px;
+  background: #fff;
+  flex-wrap: nowrap;
+  margin: 20px 15px 0px;
+  border-radius: 30px;
+}
+
+.cityInput {
+  width: 100%;
+  height: auto;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  margin-left: 10px;
+  font-weight: 500;
+}
+.search-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-top: 4px;
+  margin-right: 5px;
+}
+
+.Image {
+  width: 170px;
+  height: 170px;
+}
+
+.cord {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.cord div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.temp,
+.cityname,
+.country {
+  margin-top: 5px;
+  font-size: 35px;
+}
+
+.temp {
+  font-weight: 500;
+}
+.cityname {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.country {
+  font-size: 18px;
+  font-weight: 500;
+}
+.cord div span {
+  font-size: 14px;
+}
+.cord div span:nth-child(2) {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.wind-details {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  align-items: center;
+  gap: 150px;
+  margin-bottom: 5px;
+}
+.wind-details div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.wind-details img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.loading-message,
+.error-message,
+.city-not-found {
+  margin-top: 15px;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+}
+.myInfo {
+  text-decoration: none;
+  color: rgba(242, 255, 2, 0.857);
+}
